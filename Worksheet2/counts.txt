@@ -1,6 +1,5 @@
-This is the number of lines in the file result_Music.txt: 
-238 result_Music.txt
+This is the number of lines in the file result_Music_1.txt: 
+196
 
-
-This is the number of words in the file result_Music.txt:
-830 result_Music.txt
+This is the number of words in the file result_Music_1.txt:
+654

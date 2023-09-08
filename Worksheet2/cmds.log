@@ -1,922 +1,959 @@
-    1  cd
-    2  cd /
-    3  cd ~/Desktop
-    4  mkdir /tmp/cs131
-    5  cd /tmp/cs131
-    6  mkdir Worksheet1
-    7  mkdir
-    8  cd /etc ~/Desktop
-    9  ls
-   10  history > cmds.log
-   11  cs131
-   12  cd ~/Desktop
-   13  mkdir cs131
-   14  cd cd131/
-   15  git init
-   16  touch thi.txt
-   17  ls
-   18  git status
-   19  cd ~/Desktop
-   20  mkdir myproject
-   21  cd myproject/
-   22  git init
-   23  touch thi.txt
-   24  ls
-   25  git status
-   26  git add
-   27  git status
-   28  git comit -m "this is my first comit"
-   29  git commit -m "this is my first commit"
-   30  wget www.github.com
-   31  git --version
+    1  cd cs131
+    2  mkdir cs131
+    3  cd cs131
+    4  git --init bare
+    5  git init
+    6  ls
+    7  cd /etc ~/Desktop
+    8  ls
+    9  mkdir Worksheet1
+   10  ls
+   11  touch thi.txt
+   12  ls
+   13  git status
+   14  git init
+   15  git status
+   16  git commit
+   17  thidaonguyen.pham@sjsu.edu
+   18  <thidaonguyen.pham@sjsu.edu>
+   19  git add<thi.txt>
+   20  git add <thi.txt>
+   21  git add.
+   22  git add-A
+   23  git add -A
+   24  git status
+   25  git commit -m "This is my first commit!"
+   26  git config --global user.email "you@example.com"
+   27   git config --global user.name "Thi Pham"
+   28  git config --global user.email "thidaonguyen.pham@sjsu.edu
+   29  '
+   30  >
+   31  cd
    32  pwd
-   33  cd /
-   34  pwd
-   35  cd cs131
-   36  cd etc
-   37  pwd
-   38  cd
-   39  pwd
-   40  cd etc
-   41  pwd
-   42  whoami
-   43  cd /home/thif23/Desktop
-   44  pwd
-   45  cd ~/Desktop
-   46  cd
-   47  pwd
-   48  git init
-   49  touch thi.txt
-   50  ls
-   51  git status
-   52  cd
-   53  pwd
-   54  cd /Users/user/my_project
-   55  $ cd /Users/user/my_project
-   56  pwd
-   57  cd ~/thif23
-   58  mkdir /home/git/git_repo
-   59  cd /home/git/git_repo
-   60  cd cs131
-   61  mkdir cs131
+   33  mkdir cs131
+   34  git status
+   35  git add -A
+   36  cd cs131/
+   37  git init
+   38  git status
+   39  git commit -m "This is my first commit!"
+   40  git branch
+   41  git checkout -b <my branch name>
+   42  git checkout -b <branch name>
+   43  git branch
+   44  git remote add origin https://github.com/thipham00/cs131.git
+   45  git push -u origin main
+   46  git push -u origin master
+   47  git remote add origin https://github.com/thipham00/cs131.git
+   48  git push -u origin master
+   49  git remote add origin git@github.com:thipham00/cs131.git
+   50  git branch -M main
+   51  git push -u origin main
+   52  git push -u origin master
+   53  git push -u origin main
+   54  git remote add origin git@github.com:thipham00/cs131.git
+   55  git branch -M main
+   56  git push -u origin main
+   57  git push origin master
+   58  git push
+   59  git branch
+   60  mkdir -p cs131/Worksheet1
+   61  ls
    62  cd cs131
-   63  git --init bare
-   64  git init
-   65  ls
-   66  cd /etc ~/Desktop
-   67  ls
-   68  mkdir Worksheet1
-   69  ls
-   70  touch thi.txt
-   71  ls
-   72  git status
-   73  git init
-   74  git status
-   75  git commit
-   76  thidaonguyen.pham@sjsu.edu
-   77  <thidaonguyen.pham@sjsu.edu>
-   78  git add<thi.txt>
-   79  git add <thi.txt>
-   80  git add.
-   81  git add-A
-   82  git add -A
-   83  git status
-   84  git commit -m "This is my first commit!"
-   85  git config --global user.email "you@example.com"
-   86   git config --global user.name "Thi Pham"
-   87  git config --global user.email "thidaonguyen.pham@sjsu.edu
-   88  '
-   89  >
-   90  cd
-   91  pwd
-   92  mkdir cs131
-   93  git status
-   94  git add -A
-   95  cd cs131/
-   96  git init
-   97  git status
-   98  git commit -m "This is my first commit!"
-   99  git branch
-  100  git checkout -b <my branch name>
-  101  git checkout -b <branch name>
-  102  git branch
-  103  git remote add origin https://github.com/thipham00/cs131.git
-  104  git push -u origin main
-  105  git push -u origin master
-  106  git remote add origin https://github.com/thipham00/cs131.git
-  107  git push -u origin master
-  108  git remote add origin git@github.com:thipham00/cs131.git
-  109  git branch -M main
-  110  git push -u origin main
-  111  git push -u origin master
-  112  git push -u origin main
-  113  git remote add origin git@github.com:thipham00/cs131.git
-  114  git branch -M main
-  115  git push -u origin main
-  116  git push origin master
-  117  git push
-  118  git branch
-  119  mkdir -p cs131/Worksheet1
-  120  ls
-  121  cd cs131
-  122  ls
-  123  git push
-  124  git checkout -b <newbranch>
-  125  git branch
-  126  git checkout -b ＜new-branch＞
-  127  git branch
-  128  git push
-  129  git push --set-upstream origin ＜new-branch＞
-  130  git remote add origin https://github.com/thipham00/cs131.git
-  131  git push
-  132  cd
-  133  pwd
-  134  cd cs131
-  135  ls
-  136  ls > thi.txt
-  137  cat thi.txt
-  138  pwd
-  139  cd
-  140  pwd
-  141  cd cs131
-  142  ls
-  143  cd Worksheet1/
-  144  git init
-  145  git status
-  146  cd cs131 Worksheet1/
-  147  ls
-  148  git init
-  149  git add -A
-  150  git stattus
-  151  git status
-  152  git push
-  153  git remote add origin https://github.com/thipham00/cs131.git
-  154  git push -u origin main
-  155  touch thi1.txt
-  156  ls
-  157  git status
-  158  git init
-  159  git status
-  160  git commit -m "This is my first commit!"
-  161  git status
-  162  git add -A
-  163  git init
-  164  git status
-  165  git commit -m "This is my second commit!"
-  166  git branch
-  167  git checkout -b ＜new-branch
-  168  git branch
-  169  git remote add origin https://github.com/thipham00/cs131.git
-  170  git push
-  171  git push --set-upstream origin ＜new-branch
-  172  git push
-  173  cd
-  174  pwd
+   63  ls
+   64  git push
+   65  git checkout -b <newbranch>
+   66  git branch
+   67  git checkout -b ＜new-branch＞
+   68  git branch
+   69  git push
+   70  git push --set-upstream origin ＜new-branch＞
+   71  git remote add origin https://github.com/thipham00/cs131.git
+   72  git push
+   73  cd
+   74  pwd
+   75  cd cs131
+   76  ls
+   77  ls > thi.txt
+   78  cat thi.txt
+   79  pwd
+   80  cd
+   81  pwd
+   82  cd cs131
+   83  ls
+   84  cd Worksheet1/
+   85  git init
+   86  git status
+   87  cd cs131 Worksheet1/
+   88  ls
+   89  git init
+   90  git add -A
+   91  git stattus
+   92  git status
+   93  git push
+   94  git remote add origin https://github.com/thipham00/cs131.git
+   95  git push -u origin main
+   96  touch thi1.txt
+   97  ls
+   98  git status
+   99  git init
+  100  git status
+  101  git commit -m "This is my first commit!"
+  102  git status
+  103  git add -A
+  104  git init
+  105  git status
+  106  git commit -m "This is my second commit!"
+  107  git branch
+  108  git checkout -b ＜new-branch
+  109  git branch
+  110  git remote add origin https://github.com/thipham00/cs131.git
+  111  git push
+  112  git push --set-upstream origin ＜new-branch
+  113  git push
+  114  cd
+  115  pwd
+  116  ls
+  117  history > cmds.log
+  118  git push
+  119  git push -u origin master
+  120  git push -u <new-branch
+  121  git push -u Worksheet1
+  122  git push --set-upstream Worksheet1 master
+  123  history > cmds.log
+  124  git remote add origin https://github.com/thipham00/cs131.git
+  125  git push
+  126  git push --set-upstream origin master
+  127  history > cmds.log
+  128  git remote add origin https://github.com/thipham00/cs131.git
+  129  git fetch
+  130  git log origin/main
+  131  git log HEAD..remote/branch
+  132  git log/< new-branch
+  133  history
+  134  cd
+  135  pwd
+  136  cd /
+  137  pwd
+  138  cd thif23
+  139  pwd
+  140  cd home
+  141  pwd
+  142  cd ..
+  143  pwd
+  144  cd
+  145  pwd
+  146  cd ../..
+  147  pwd
+  148  cd
+  149  pwd
+  150  cd ../../etc
+  151  pwd
+  152  cd /
+  153  pwd
+  154  cd etc
+  155  pwd
+  156  whoami
+  157  cd /home/thif23/Desktop
+  158  pwd
+  159  cd ~
+  160  pwd
+  161  cd ~/Desktop
+  162  cd
+  163  pwd
+  164  mkdir cs131
+  165  rm cs131
+  166  mkdir /cs131/Worksheet1
+  167  ls
+  168  rm cmds.log
+  169  ls
+  170  rm index.html.1
+  171  rm myproject
+  172  rm thi.txt
+  173  ls
+  174  rm -r myproject
   175  ls
-  176  history > cmds.log
-  177  git push
-  178  git push -u origin master
-  179  git push -u <new-branch
-  180  git push -u Worksheet1
-  181  git push --set-upstream Worksheet1 master
-  182  history > cmds.log
-  183  git remote add origin https://github.com/thipham00/cs131.git
-  184  git push
-  185  git push --set-upstream origin master
-  186  history > cmds.log
-  187  git remote add origin https://github.com/thipham00/cs131.git
-  188  git fetch
-  189  git log origin/main
-  190  git log HEAD..remote/branch
-  191  git log/< new-branch
-  192  history
-  193  cd
-  194  pwd
-  195  cd /
-  196  pwd
-  197  cd thif23
-  198  pwd
-  199  cd home
-  200  pwd
-  201  cd ..
-  202  pwd
-  203  cd
-  204  pwd
-  205  cd ../..
-  206  pwd
-  207  cd
-  208  pwd
-  209  cd ../../etc
-  210  pwd
-  211  cd /
-  212  pwd
-  213  cd etc
-  214  pwd
-  215  whoami
-  216  cd /home/thif23/Desktop
-  217  pwd
-  218  cd ~
-  219  pwd
-  220  cd ~/Desktop
-  221  cd
-  222  pwd
-  223  mkdir cs131
-  224  rm cs131
-  225  mkdir /cs131/Worksheet1
-  226  ls
-  227  rm cmds.log
-  228  ls
-  229  rm index.html.1
-  230  rm myproject
-  231  rm thi.txt
-  232  ls
-  233  rm -r myproject
+  176  ls
+  177  mkdir /home/cs131/Worksheet1
+  178  mkdir cs131
+  179  cd cs131/
+  180  pwd
+  181  mkdir /cs131/Worksheet1
+  182  mkdir Worksheet1
+  183  ls
+  184  pwd
+  185  rm thi.txt
+  186  ls
+  187  rm cs131
+  188  ls
+  189  pws
+  190  pwd
+  191  cd Worksheet1/
+  192  ls
+  193  rm thi1.txt
+  194  ls
+  195  git init
+  196  touch thi.txt
+  197  ls
+  198  git status
+  199  git init
+  200  git status
+  201  git add <thi.txt>
+  202  git add < thi.txt >
+  203  git status
+  204  git branch -d < new-branch
+  205  ls
+  206  git branch --delete ＜new-branch
+  207  git push origin --delete old-branch
+  208  git status
+  209  git fetch --all
+  210  git add/rm <thi1.txt>
+  211  git add/rm <thi1.txt>...
+  212  git add .
+  213  ls
+  214  git commit
+  215  git commit -m "commit message"
+  216  git init
+  217  git status
+  218  git push
+  219  git status
+  220  tree
+  221  cd cd131/
+  222  cd cs131/
+  223  cd /
+  224  tree
+  225  cd cs131 /
+  226  cd
+  227  pwd
+  228  cd cs131 /
+  229  ls
+  230  cd ..
+  231  cd /
+  232  cd /cs131
+  233  cd cs131/
   234  ls
-  235  ls
-  236  mkdir /home/cs131/Worksheet1
-  237  mkdir cs131
-  238  cd cs131/
-  239  pwd
-  240  mkdir /cs131/Worksheet1
-  241  mkdir Worksheet1
-  242  ls
-  243  pwd
-  244  rm thi.txt
-  245  ls
-  246  rm cs131
-  247  ls
-  248  pws
-  249  pwd
-  250  cd Worksheet1/
-  251  ls
-  252  rm thi1.txt
-  253  ls
-  254  git init
-  255  touch thi.txt
-  256  ls
-  257  git status
-  258  git init
-  259  git status
-  260  git add <thi.txt>
-  261  git add < thi.txt >
-  262  git status
-  263  git branch -d < new-branch
-  264  ls
-  265  git branch --delete ＜new-branch
-  266  git push origin --delete old-branch
-  267  git status
-  268  git fetch --all
-  269  git add/rm <thi1.txt>
-  270  git add/rm <thi1.txt>...
-  271  git add .
-  272  ls
-  273  git commit
-  274  git commit -m "commit message"
-  275  git init
-  276  git status
-  277  git push
-  278  git status
-  279  tree
-  280  cd cd131/
-  281  cd cs131/
-  282  cd /
-  283  tree
-  284  cd cs131 /
-  285  cd
-  286  pwd
-  287  cd cs131 /
-  288  ls
-  289  cd ..
-  290  cd /
-  291  cd /cs131
-  292  cd cs131/
+  235  mkdir cs131
+  236  mkdir /tmp/cs131
+  237  cd cs131/
+  238  cd /tmp/cs131
+  239  ls
+  240  rm cmds.log
+  241  ls
+  242  git status
+  243  git init
+  244  git status
+  245  rm thi.txt
+  246  ls
+  247  rm cs131
+  248  tree
+  249  ls
+  250  git remote add origin https://github.com/thipham00/cs131.git
+  251  git branch -M main
+  252  git push -u origin main
+  253  cd Worksheet1/
+  254  ls
+  255  git status
+  256  touch thi.txt
+  257  ls
+  258  git status
+  259  git init
+  260  git status
+  261  git commit -m "commit message"
+  262  git init
+  263  git status
+  264  git commit -m "This is my first commit!"
+  265  git add <thi.txt>
+  266  git add thi.txt
+  267  ls
+  268  git status
+  269  ls
+  270  git branch
+  271  ls
+  272  tree
+  273  cd /
+  274  cd /tmp/cs131
+  275  tree
+  276  git remote add origin https://github.com/thipham00/cs131.git
+  277  git branch -M main
+  278  git push -u origin main
+  279  cd .
+  280  pwd
+  281  cd /
+  282  git remote add origin https://github.com/thipham00/cs131.git
+  283  cd Worksheet1/
+  284  cd /tmp/cs131
+  285  cd Worksheet1/
+  286  git remote add origin https://github.com/thipham00/cs131.git
+  287  git branch -M main
+  288  git push -u origin main
+  289  git pull origin [branch]
+  290  git pull origin master
+  291  git pull origin main
+  292  git branch
   293  ls
-  294  mkdir cs131
-  295  mkdir /tmp/cs131
-  296  cd cs131/
-  297  cd /tmp/cs131
-  298  ls
-  299  rm cmds.log
-  300  ls
-  301  git status
-  302  git init
-  303  git status
-  304  rm thi.txt
-  305  ls
-  306  rm cs131
-  307  tree
-  308  ls
-  309  git remote add origin https://github.com/thipham00/cs131.git
-  310  git branch -M main
-  311  git push -u origin main
-  312  cd Worksheet1/
-  313  ls
-  314  git status
-  315  touch thi.txt
-  316  ls
-  317  git status
-  318  git init
-  319  git status
-  320  git commit -m "commit message"
-  321  git init
-  322  git status
-  323  git commit -m "This is my first commit!"
-  324  git add <thi.txt>
-  325  git add thi.txt
-  326  ls
-  327  git status
-  328  ls
-  329  git branch
-  330  ls
-  331  tree
-  332  cd /
-  333  cd /tmp/cs131
-  334  tree
-  335  git remote add origin https://github.com/thipham00/cs131.git
-  336  git branch -M main
-  337  git push -u origin main
-  338  cd .
-  339  pwd
-  340  cd /
-  341  git remote add origin https://github.com/thipham00/cs131.git
-  342  cd Worksheet1/
-  343  cd /tmp/cs131
-  344  cd Worksheet1/
-  345  git remote add origin https://github.com/thipham00/cs131.git
-  346  git branch -M main
-  347  git push -u origin main
-  348  git pull origin [branch]
-  349  git pull origin master
-  350  git pull origin main
-  351  git branch
-  352  ls
-  353  git branch --show-current
-  354  git status
-  355  cd /tmp/cs131
-  356  git remote add origin https://github.com/thipham00/cs131.git
-  357  git remote
-  358  git remote-
-  359  git remote -v
-  360  git remote rename origin backup
-  361  git remote
-  362  git remote add origin https://github.com/thipham00/cs131.git
-  363  git branch -M main
-  364  git push -u origin main
-  365  git branch --show-current
-  366  git show-ref
-  367  git push origin BRANCH --force
-  368  git status
-  369  git add Worksheet1/
-  370  git init Worksheet1
-  371  ls .git
-  372  git fetch
-  373  git remote update
-  374  git remote show origin
-  375  git status
-  376  git add Worksheet1.
-  377  git add Worksheet1/
-  378  git add Worksheet1
-  379  ls .gitignore
-  380  ls -la
-  381  rm -rf .git
-  382  ls -la
-  383  git add Worksheet1/
-  384  git add .
-  385  git reset HEAD
-  386  git checkout.
-  387  git checkout .
-  388  git reset HEAD
-  389  ls -la
-  390  cat .git/HEAD
-  391  git init
-  392  git status
-  393  git add Worksheet1/
-  394  tree
-  395  pwd
-  396  git init
-  397  git commit -m "commit message"
+  294  git branch --show-current
+  295  git status
+  296  cd /tmp/cs131
+  297  git remote add origin https://github.com/thipham00/cs131.git
+  298  git remote
+  299  git remote-
+  300  git remote -v
+  301  git remote rename origin backup
+  302  git remote
+  303  git remote add origin https://github.com/thipham00/cs131.git
+  304  git branch -M main
+  305  git push -u origin main
+  306  git branch --show-current
+  307  git show-ref
+  308  git push origin BRANCH --force
+  309  git status
+  310  git add Worksheet1/
+  311  git init Worksheet1
+  312  ls .git
+  313  git fetch
+  314  git remote update
+  315  git remote show origin
+  316  git status
+  317  git add Worksheet1.
+  318  git add Worksheet1/
+  319  git add Worksheet1
+  320  ls .gitignore
+  321  ls -la
+  322  rm -rf .git
+  323  ls -la
+  324  git add Worksheet1/
+  325  git add .
+  326  git reset HEAD
+  327  git checkout.
+  328  git checkout .
+  329  git reset HEAD
+  330  ls -la
+  331  cat .git/HEAD
+  332  git init
+  333  git status
+  334  git add Worksheet1/
+  335  tree
+  336  pwd
+  337  git init
+  338  git commit -m "commit message"
+  339  git status
+  340  git init
+  341  ls -la
+  342  git add Worksheet1/
+  343  cd sub
+  344  git add .
+  345  git commit -m initial
+  346  git init
+  347  git status
+  348  git submodule add https://github.com/thipham00/cs131.git
+  349  git status
+  350  git add .
+  351  cd ..
+  352  git add .
+  353  ls -la
+  354  cd /tmp/cs131
+  355  ls -la
+  356  git status
+  357  git add Worksheet1/
+  358  git commit -m "commit message"
+  359  cd Worksheet1/
+  360  git rm -r --cached .
+  361  ls
+  362  tree
+  363  cd /cs131
+  364  cd /
+  365  cd /tmp/cs131
+  366  tree
+  367  git status
+  368  git add Worksheet1/
+  369  git commit .
+  370  git submodule init
+  371  git commit .
+  372  git status
+  373  cd Worksheet1/
+  374  ls -la
+  375  rm -rf .git
+  376  git add --all
+  377  ls -la
+  378  cd /
+  379  cd /tmp/cs131
+  380  git status
+  381  git commit -m "commit message"
+  382  git branch
+  383  git remote add origin https://github.com/thipham00/cs131.git
+  384  git branch -M main
+  385  git push -u origin main
+  386  git push origin main
+  387  cd Worksheet1/
+  388  history > cmds.log
+  389  ls
+  390  tree
+  391  cd /
+  392  cd /tmp/cs131
+  393  git push origin main
+  394  mv cmds.log cs131
+  395  cd /
+  396  cd /tmp/cs131
+  397  tree
   398  git status
-  399  git init
-  400  ls -la
-  401  git add Worksheet1/
-  402  cd sub
-  403  git add .
-  404  git commit -m initial
-  405  git init
-  406  git status
-  407  git submodule add https://github.com/thipham00/cs131.git
-  408  git status
-  409  git add .
-  410  cd ..
-  411  git add .
-  412  ls -la
-  413  cd /tmp/cs131
-  414  ls -la
-  415  git status
-  416  git add Worksheet1/
-  417  git commit -m "commit message"
-  418  cd Worksheet1/
-  419  git rm -r --cached .
-  420  ls
-  421  tree
-  422  cd /cs131
-  423  cd /
-  424  cd /tmp/cs131
-  425  tree
-  426  git status
-  427  git add Worksheet1/
-  428  git commit .
-  429  git submodule init
-  430  git commit .
-  431  git status
-  432  cd Worksheet1/
-  433  ls -la
-  434  rm -rf .git
-  435  git add --all
-  436  ls -la
-  437  cd /
-  438  cd /tmp/cs131
-  439  git status
-  440  git commit -m "commit message"
-  441  git branch
-  442  git remote add origin https://github.com/thipham00/cs131.git
-  443  git branch -M main
-  444  git push -u origin main
-  445  git push origin main
-  446  cd Worksheet1/
-  447  history > cmds.log
-  448  ls
-  449  tree
-  450  cd /
-  451  cd /tmp/cs131
-  452  git push origin main
-  453  mv cmds.log cs131
-  454  cd /
+  399  git add Worksheet1/cmds.log
+  400  git init
+  401  git status
+  402  git push origin main
+  403  tree
+  404  history > cmds.log
+  405  ls
+  406  tree
+  407  git status
+  408  git add cmds.log
+  409  git init
+  410  git status
+  411  git commit -m "commit"
+  412  git status
+  413  git push origin main
+  414  ls
+  415  rm cmds.log
+  416  ls
+  417  git status
+  418  git rm cmds.log
+  419  ls
+  420  git status
+  421  git init
+  422  git commit -m "commit"
+  423  tree
+  424  git push origin main
+  425  exit
+  426  ==$$
+  427  ls
+  428  cd
+  429  pwd
+  430  cd /tmp/cs131
+  431  ls
+  432  tree
+  433  cd /
+  434  tree
+  435  exit
+  436  cat
+  437  cd ..
+  438  tree
+  439  ls
+  440  cd /tmp/cs131
+  441  ls
+  442  cd ..
+  443  cd /
+  444  ls
+  445  cd /
+  446  man ls
+  447  ls -l
+  448  cd /tmp/cs131
+  449  ls -l
+  450  ls -lt
+  451  pingping
+  452  history
+  453  ls
+  454  tree
   455  cd /tmp/cs131
   456  tree
-  457  git status
-  458  git add Worksheet1/cmds.log
-  459  git init
-  460  git status
-  461  git push origin main
-  462  tree
-  463  history > cmds.log
+  457  ls
+  458  clear
+  459  cd ../..
+  460  ls
+  461  cd /
+  462  cd 
+  463  pwd
   464  ls
-  465  tree
-  466  git status
-  467  git add cmds.log
-  468  git init
-  469  git status
-  470  git commit -m "commit"
-  471  git status
-  472  git push origin main
-  473  ls
-  474  rm cmds.log
-  475  ls
-  476  git status
-  477  git rm cmds.log
+  465  ls -lat
+  466  ls -latr
+  467  man lat
+  468  man ls -lat
+  469  ls *.txt
+  470  cd /tmp/cs131
+  471  ls *.txt
+  472  cd
+  473  pwd
+  474  ls
+  475  cd /
+  476  ls
+  477  cd /tmp/cs131
   478  ls
-  479  git status
-  480  git init
-  481  git commit -m "commit"
-  482  tree
-  483  git push origin main
-  484  exit
-  485  ==$$
-  486  ls
-  487  cd
-  488  pwd
-  489  cd /tmp/cs131
-  490  ls
+  479  tree
+  480  cd /home
+  481  tree
+  482  ls
+  483  cd /home/thif23
+  484  cd /home/thif23
+  485  tree
+  486  cd /home
+  487  tree
+  488  cd /home/thif23
+  489  tree
+  490  cd /tmp
   491  tree
-  492  cd /
+  492  cd /tmp/cs131
   493  tree
-  494  exit
-  495  cat
-  496  cd ..
-  497  tree
-  498  ls
-  499  cd /tmp/cs131
+  494  mv -v* /home/thif23| q
+  495  tree
+  496  cd /home/thif23
+  497  ls
+  498  tree
+  499  cd /home
   500  ls
   501  cd ..
-  502  cd /
-  503  ls
-  504  cd /
-  505  man ls
-  506  ls -l
-  507  cd /tmp/cs131
-  508  ls -l
-  509  ls -lt
-  510  pingping
-  511  history
-  512  ls
-  513  tree
-  514  cd /tmp/cs131
-  515  tree
-  516  ls
-  517  clear
-  518  cd ../..
-  519  ls
-  520  cd /
-  521  cd 
-  522  pwd
-  523  ls
-  524  ls -lat
-  525  ls -latr
-  526  man lat
-  527  man ls -lat
-  528  ls *.txt
-  529  cd /tmp/cs131
-  530  ls *.txt
-  531  cd
-  532  pwd
+  502  pwd
+  503  cd ../..
+  504  pwd
+  505  cd /home/thif23
+  506  pwd
+  507  cd /tmp
+  508  ls
+  509  mkdir sampleProject
+  510  cd sampleProject
+  511  % touch sample.txt
+  512  ls -ltr
+  513  pwd
+  514  git init
+  515  git add .
+  516  git status
+  517  cd /tmp
+  518  ls
+  519  histort
+  520  history
+  521  cd sampleProject/
+  522  history
+  523  git add sample.txt
+  524  touch sample.txt
+  525  git status
+  526  git init
+  527  git status
+  528  git commit -m "heh"
+  529  git init
+  530  git status
+  531  cd /home/thif23
+  532  cd /
   533  ls
-  534  cd /
-  535  ls
-  536  cd /tmp/cs131
-  537  ls
-  538  tree
-  539  cd /home
-  540  tree
-  541  ls
-  542  cd /home/thif23
-  543  cd /home/thif23
-  544  tree
-  545  cd /home
-  546  tree
-  547  cd /home/thif23
-  548  tree
-  549  cd /tmp
-  550  tree
-  551  cd /tmp/cs131
+  534  cd /tmp
+  535  cd ~.ssh && ssh-keygen
+  536  cd ~/.ssh && ssh-keygen
+  537  man less
+  538  head -2
+  539  cd /home/thif23
+  540  ls
+  541  pwd
+  542  cd /
+  543  pwd
+  544  cd ..
+  545  open .
+  546  exit
+  547  cd /
+  548  cd ..
+  549  cd
+  550  pwd
+  551  cd /home/thif23
   552  tree
-  553  mv -v* /home/thif23| q
-  554  tree
-  555  cd /home/thif23
-  556  ls
-  557  tree
-  558  cd /home
-  559  ls
-  560  cd ..
-  561  pwd
-  562  cd ../..
-  563  pwd
-  564  cd /home/thif23
-  565  pwd
-  566  cd /tmp
-  567  ls
-  568  mkdir sampleProject
-  569  cd sampleProject
-  570  % touch sample.txt
-  571  ls -ltr
-  572  pwd
-  573  git init
-  574  git add .
+  553  cd ~/.ssh && ssh-keygen
+  554  cat id_rsa.pub
+  555  cd /
+  556  mann les
+  557  man less
+  558  cd /
+  559  tree
+  560  ls
+  561  cd /tmp/cs131
+  562  tree
+  563  mv -v * /home/thif23
+  564  tree
+  565  cd /home/thif23
+  566  tree
+  567  cd /home
+  568  tree
+  569  git status
+  570  git inti
+  571  git init
+  572  cd /home/thif23
+  573  tree
+  574  ls
   575  git status
-  576  cd /tmp
-  577  ls
-  578  histort
-  579  history
-  580  cd sampleProject/
-  581  history
-  582  git add sample.txt
-  583  touch sample.txt
+  576  git init
+  577  git status
+  578  git init
+  579  git status
+  580  git commit -m "change directory"
+  581  git add Worksheet1/
+  582  git status
+  583  git add --all
   584  git status
-  585  git init
-  586  git status
-  587  git commit -m "heh"
+  585  tree
+  586  git init
+  587  git push origin main
   588  git init
   589  git status
-  590  cd /home/thif23
-  591  cd /
-  592  ls
-  593  cd /tmp
-  594  cd ~.ssh && ssh-keygen
-  595  cd ~/.ssh && ssh-keygen
-  596  man less
-  597  head -2
+  590  git commit -m "change directory"
+  591  git push origin main
+  592  git branch
+  593  git push origin main
+  594  git push origin master
+  595  git remote add origin https://github.com/thipham00/cs131.git
+  596  git push -u origin master
+  597  tree
   598  cd /home/thif23
-  599  ls
-  600  pwd
-  601  cd /
-  602  pwd
-  603  cd ..
-  604  open .
-  605  exit
-  606  cd /
-  607  cd ..
-  608  cd
-  609  pwd
-  610  cd /home/thif23
-  611  tree
-  612  cd ~/.ssh && ssh-keygen
-  613  cat id_rsa.pub
+  599  tree
+  600  git status
+  601  git remote add origin https://github.com/thipham00/cs131.git
+  602  git push -u origin master
+  603  cd
+  604  pwd
+  605  cd /home/cs131
+  606  cd /home/thif23
+  607  ls
+  608  cd /
+  609  git branch
+  610  cd /tmp
+  611  git branch
+  612  cd /home/thif23
+  613  git branch
   614  cd /
-  615  mann les
-  616  man less
+  615  git branch -r
+  616  cd ..
   617  cd /
-  618  tree
-  619  ls
-  620  cd /tmp/cs131
-  621  tree
-  622  mv -v * /home/thif23
-  623  tree
-  624  cd /home/thif23
-  625  tree
-  626  cd /home
-  627  tree
-  628  git status
-  629  git inti
-  630  git init
-  631  cd /home/thif23
-  632  tree
-  633  ls
-  634  git status
-  635  git init
-  636  git status
-  637  git init
-  638  git status
-  639  git commit -m "change directory"
-  640  git add Worksheet1/
-  641  git status
-  642  git add --all
-  643  git status
-  644  tree
-  645  git init
-  646  git push origin main
-  647  git init
-  648  git status
-  649  git commit -m "change directory"
-  650  git push origin main
-  651  git branch
-  652  git push origin main
-  653  git push origin master
-  654  git remote add origin https://github.com/thipham00/cs131.git
-  655  git push -u origin master
-  656  tree
-  657  cd /home/thif23
-  658  tree
-  659  git status
-  660  git remote add origin https://github.com/thipham00/cs131.git
-  661  git push -u origin master
-  662  cd
-  663  pwd
-  664  cd /home/cs131
-  665  cd /home/thif23
-  666  ls
-  667  cd /
-  668  git branch
-  669  cd /tmp
-  670  git branch
+  618  cd .
+  619  cd /homw
+  620  cd /home
+  621  ls
+  622  git branch
+  623  cd ../..
+  624  ls
+  625  git branch -a
+  626  exi
+  627  exit
+  628  git branch -a
+  629  git branch -d remotes/origin/＜new-branch＞
+  630  git branch -d remotes/origin/＜new-branch
+  631  git push origin --delete ＜new-branch
+  632  git push origin --delete remotes/origin/main
+  633  cat id_rsa.pub
+  634  cd /ssh
+  635  cd .ssh/
+  636  ls
+  637  cd thif23/
+  638  cd /home/thif23
+  639  ls
+  640  tree
+  641  git branch
+  642  git branch -a
+  643  git branch
+  644  cd /tmp
+  645  ls
+  646  cd Worksheet1
+  647  ls
+  648  tree
+  649  cd cs131/
+  650  tree
+  651  cd /tmp
+  652  cd cs131/
+  653  tree
+  654  cd /tmp
+  655  rm cs131
+  656  rm -r cs131
+  657  man ls -ltr
+  658  ls -ltr
+  659  pwd
+  660  cd /home
+  661  ;s
+  662  ls
+  663  cd thif23/
+  664  ls
+  665  git status
+  666  git config --global user.email "thidaonguyen.pham@sjsu.edu"
+  667  git config --global user.name "Thi Pham"
+  668  cd ~/.ssh && ssh-keygen
+  669  cd thif23/
+  670  cd /
   671  cd /home/thif23
-  672  git branch
-  673  cd /
-  674  git branch -r
-  675  cd ..
-  676  cd /
-  677  cd .
-  678  cd /homw
-  679  cd /home
-  680  ls
-  681  git branch
-  682  cd ../..
-  683  ls
-  684  git branch -a
-  685  exi
-  686  exit
-  687  git branch -a
-  688  git branch -d remotes/origin/＜new-branch＞
-  689  git branch -d remotes/origin/＜new-branch
-  690  git push origin --delete ＜new-branch
-  691  git push origin --delete remotes/origin/main
-  692  cat id_rsa.pub
-  693  cd /ssh
-  694  cd .ssh/
-  695  ls
-  696  cd thif23/
-  697  cd /home/thif23
+  672  cd ~/.ssh && ssh-keygen
+  673  cd /home/thif23
+  674  cd ~/.ssh && ssh-keygen
+  675  cat id_rsa.pub
+  676  git status
+  677  git init
+  678  git status
+  679  ls
+  680  git add .
+  681  git init
+  682  git status
+  683  git remote add origin https://github.com/thipham00/cs131.git
+  684  git push -u origin master
+  685  git init
+  686  ls
+  687  tree
+  688  git commit -m "add ssh setup"
+  689  git init
+  690  git remote add origin https://github.com/thipham00/cs131.git
+  691  git push -u origin master
+  692  git pull
+  693  git remote add origin https://github.com/thipham00/cs131.git
+  694  git push -u origin master
+  695  git pull
+  696  git push -f origin master
+  697  cd /home
   698  ls
-  699  tree
-  700  git branch
-  701  git branch -a
-  702  git branch
-  703  cd /tmp
-  704  ls
-  705  cd Worksheet1
+  699  cd thif23/
+  700  pwd
+  701  ls
+  702  history > cmds.log
+  703  ls
+  704  cd /Worksheet1
+  705  cd Worksheet1/
   706  ls
-  707  tree
-  708  cd cs131/
-  709  tree
-  710  cd /tmp
-  711  cd cs131/
-  712  tree
-  713  cd /tmp
-  714  rm cs131
-  715  rm -r cs131
-  716  man ls -ltr
-  717  ls -ltr
-  718  pwd
-  719  cd /home
-  720  ;s
-  721  ls
-  722  cd thif23/
-  723  ls
-  724  git status
-  725  git config --global user.email "thidaonguyen.pham@sjsu.edu"
-  726  git config --global user.name "Thi Pham"
-  727  cd ~/.ssh && ssh-keygen
-  728  cd thif23/
-  729  cd /
-  730  cd /home/thif23
-  731  cd ~/.ssh && ssh-keygen
-  732  cd /home/thif23
-  733  cd ~/.ssh && ssh-keygen
-  734  cat id_rsa.pub
-  735  git status
-  736  git init
-  737  git status
-  738  ls
-  739  git add .
-  740  git init
-  741  git status
-  742  git remote add origin https://github.com/thipham00/cs131.git
-  743  git push -u origin master
-  744  git init
-  745  ls
-  746  tree
-  747  git commit -m "add ssh setup"
-  748  git init
-  749  git remote add origin https://github.com/thipham00/cs131.git
-  750  git push -u origin master
-  751  git pull
-  752  git remote add origin https://github.com/thipham00/cs131.git
-  753  git push -u origin master
-  754  git pull
-  755  git push -f origin master
-  756  cd /home
-  757  ls
-  758  cd thif23/
-  759  pwd
-  760  ls
-  761  history > cmds.log
-  762  ls
-  763  cd /Worksheet1
-  764  cd Worksheet1/
-  765  ls
-  766  rm cmds.log
-  767  ls
-  768  cd /home/thif23
-  769  ls
-  770  mv cmds.log /home/thif23/Worksheet1
-  771  ls
-  772  tree
-  773  git status
-  774  git init
-  775  git add .
-  776  git status
-  777  git init
-  778  git commit -m "New updates"
-  779  git remote add origin https://github.com/thipham00/cs131.git
-  780  git push -u origin master
-  781  git push -f origin master
-  782  git status
-  783  history
-  784  git branch -a
-  785   git log --oneline --decorate --graph --all
-  786  git log
-  787  git log --oneline -n 1 feature
-  788  git checkout main
-  789  git branch -a
-  790  cd /home/thif23
-  791  ls
-  792  git branch
-  793  git branch -r
-  794  git branch -vv
-  795  cd .
-  796  cd /
-  797  git branch -a
-  798  cd ~/
-  799  git branch -a
-  800  git branch -vv
-  801  git branch
-  802  ls
-  803  tree
-  804  rm cs131
-  805  rm -r cs131
-  806  rm -f cs131
-  807  rm Worksheet1
-  808  rm cs131/cs131
+  707  rm cmds.log
+  708  ls
+  709  cd /home/thif23
+  710  ls
+  711  mv cmds.log /home/thif23/Worksheet1
+  712  ls
+  713  tree
+  714  git status
+  715  git init
+  716  git add .
+  717  git status
+  718  git init
+  719  git commit -m "New updates"
+  720  git remote add origin https://github.com/thipham00/cs131.git
+  721  git push -u origin master
+  722  git push -f origin master
+  723  git status
+  724  history
+  725  git branch -a
+  726   git log --oneline --decorate --graph --all
+  727  git log
+  728  git log --oneline -n 1 feature
+  729  git checkout main
+  730  git branch -a
+  731  cd /home/thif23
+  732  ls
+  733  git branch
+  734  git branch -r
+  735  git branch -vv
+  736  cd .
+  737  cd /
+  738  git branch -a
+  739  cd ~/
+  740  git branch -a
+  741  git branch -vv
+  742  git branch
+  743  ls
+  744  tree
+  745  rm cs131
+  746  rm -r cs131
+  747  rm -f cs131
+  748  rm Worksheet1
+  749  rm cs131/cs131
+  750  ls
+  751  rm thi.txt
+  752  ls
+  753  tree
+  754  cd cs131/
+  755  ls
+  756  rm Worksheet1
+  757  rm -r Worksheet1
+  758  rmdir Worksheet1
+  759  rm -f Worksheet`
+  760  `
+  761  rm -f Worksheet1
+  762  cd Worksheet1
+  763  ls
+  764  tree
+  765  rm
+  766  rm Worksheet`
+  767  d
+  768  q
+  769  exit
+  770  clear
+  771  his
+  772  .git/
+  773  wget https://raw.githubusercontent.com/khanchandaniashish/CS131/main/Global%20YouTube%20Statistics.csv
+  774  cat Global YouTube Statistics.csv
+  775  cat Global YouTube Statistics.csv.1
+  776  wget https://raw.githubusercontent.com/khanchandaniashish/CS131/main/spotify-2023.csv
+  777  pwd
+  778  ls
+  779  rm Global YouTube Statistics.csv.1
+  780  vi spotify-2023.csv
+  781  vi sort.txt
+  782  cat sort.txt
+  783  wc sort.txt
+  784  wc -l sort.txt
+  785  man wc
+  786  wc -w sort.txt
+  787  grep "Tyler
+  788  q
+  789  :q!
+  790  <
+  791  history
+  792  mkdir sample
+  793  cd sample/
+  794  grep -v "eminem" spotify-2023.csv
+  795  wget https://raw.githubusercontent.com/khanchandaniashish/CS131/main/spotify-2023.csv
+  796  grep -v "eminem" spotify-2023.csv
+  797  ls
+  798  mkdir result.txt
+  799  grep -i "eminem" spotify-2023.csv > result.txt
+  800  grep -v "Eminem" spotify-2023.csv > result_wo_eminem.txt
+  801  wc -l result_wo_eminem.txt
+  802  grep -iv "eminem" spotify-2023.csv > result_wo_eminem.txt
+  803  grep -iv "eminem" spotify-2023.csv | wc -l
+  804  cd /home/thif23
+  805  ls
+  806  tree
+  807  cd cs131/
+  808  tree
   809  ls
-  810  rm thi.txt
-  811  ls
-  812  tree
-  813  cd cs131/
-  814  ls
-  815  rm Worksheet1
-  816  rm -r Worksheet1
-  817  rmdir Worksheet1
-  818  rm -f Worksheet`
-  819  `
-  820  rm -f Worksheet1
-  821  cd Worksheet1
-  822  ls
-  823  tree
-  824  rm
-  825  rm Worksheet`
-  826  d
-  827  q
-  828  exit
-  829  clear
-  830  his
-  831  .git/
-  832  wget https://raw.githubusercontent.com/khanchandaniashish/CS131/main/Global%20YouTube%20Statistics.csv
-  833  cat Global YouTube Statistics.csv
-  834  cat Global YouTube Statistics.csv.1
-  835  wget https://raw.githubusercontent.com/khanchandaniashish/CS131/main/spotify-2023.csv
-  836  pwd
-  837  ls
-  838  rm Global YouTube Statistics.csv.1
-  839  vi spotify-2023.csv
-  840  vi sort.txt
-  841  cat sort.txt
-  842  wc sort.txt
-  843  wc -l sort.txt
-  844  man wc
-  845  wc -w sort.txt
-  846  grep "Tyler
-  847  q
-  848  :q!
-  849  <
-  850  history
-  851  mkdir sample
-  852  cd sample/
-  853  grep -v "eminem" spotify-2023.csv
-  854  wget https://raw.githubusercontent.com/khanchandaniashish/CS131/main/spotify-2023.csv
-  855  grep -v "eminem" spotify-2023.csv
-  856  ls
-  857  mkdir result.txt
-  858  grep -i "eminem" spotify-2023.csv > result.txt
-  859  grep -v "Eminem" spotify-2023.csv > result_wo_eminem.txt
-  860  wc -l result_wo_eminem.txt
-  861  grep -iv "eminem" spotify-2023.csv > result_wo_eminem.txt
-  862  grep -iv "eminem" spotify-2023.csv | wc -l
-  863  cd /home/thif23
-  864  ls
-  865  tree
-  866  cd cs131/
-  867  tree
-  868  ls
-  869  mkdir Worksheet2
-  870  tree
-  871  cd /home/thif23
-  872  tree
-  873  mkdir Workshee2
-  874  tree
-  875  cd cs131/
-  876  rm Worksheet2
-  877  rm -r Worksheet2
-  878  ls
-  879  cd /home/cs131
-  880  cd /home/thif23
-  881  tree
-  882  mv Workshee2 Worksheet2
-  883  tree
-  884  wget https://raw.githubusercontent.com/khanchandaniashish/CS131/main/Global%20YouTube%20Statistics.csv
-  885  cat Statistics.csv
-  886  cat Global YouTube Statistics.csv
-  887  ls
-  888  tree
-  889  mv Global YouTube Statistics.csv Worksheet2
-  890  tree
-  891  rm Global YouTube Statistics.csv
-  892  mv "Global YouTube Statistics.csv" Worksheet2
-  893  tree
-  894  vi Global YouTube Statistics.csv
-  895  history
+  810  mkdir Worksheet2
+  811  tree
+  812  cd /home/thif23
+  813  tree
+  814  mkdir Workshee2
+  815  tree
+  816  cd cs131/
+  817  rm Worksheet2
+  818  rm -r Worksheet2
+  819  ls
+  820  cd /home/cs131
+  821  cd /home/thif23
+  822  tree
+  823  mv Workshee2 Worksheet2
+  824  tree
+  825  wget https://raw.githubusercontent.com/khanchandaniashish/CS131/main/Global%20YouTube%20Statistics.csv
+  826  cat Statistics.csv
+  827  cat Global YouTube Statistics.csv
+  828  ls
+  829  tree
+  830  mv Global YouTube Statistics.csv Worksheet2
+  831  tree
+  832  rm Global YouTube Statistics.csv
+  833  mv "Global YouTube Statistics.csv" Worksheet2
+  834  tree
+  835  vi Global YouTube Statistics.csv
+  836  history
+  837  cd /home/thif23
+  838  ls
+  839  tree
+  840  cd Worksheet2/
+  841  tree
+  842  cat "Global YouTube Statistics.csv"
+  843  grep -i "United States" "Global YouTube Statistics.csv"
+  844  grep -i "United States" "Global YouTube Statistics.csv" > result_US.txt
+  845  ls
+  846  cat result_US.txt
+  847  grep -i "Music" "Global YouTube Statistics.csv"
+  848  cd /home/thif23
+  849  pwd
+  850  ls
+  851  tree
+  852  cd Worksheet2/
+  853  tree
+  854  history
+  855  cat result_US.txt
+  856  grep -i "Music" "Global YouTube Statistics.csv"
+  857  grep -i "Music" "Global YouTube Statistics.csv" > result_Music.txt
+  858  ls
+  859  cat result_Music.txt
+  860  wc -l result_Music.txt
+  861  wc -l result_Music.txt > counts.txt
+  862  cat counts.txt
+  863  wc -w result_Music.txt
+  864  cat >> counts.txt
+  865  wc -w result_Music.txt >> counts.txt
+  866  cat counts.txt
+  867  cat result_Music.txt
+  868  wc -w result_Music.txt
+  869  wc -w result_Music.txt >> counts.txt
+  870  cat counts.txt
+  871  vi counts.txt
+  872  cat counts.txt
+  873  history
+  874  history > cmds.log
+  875  tree
+  876  cd cs131/
+  877  cd /home/thif23
+  878  tree
+  879  git status
+  880  git add Worksheet2/
+  881  git status
+  882  git commit -m "adding Worksheet2"
+  883  git init
+  884  git status
+  885  git remote add origin https://github.com/thipham00/cs131.git
+  886  git push -u origin master
+  887  cd Worksheet2/
+  888  grep -i "channel_type" "Global YouTube Statistics.csv"
+  889  man grep
+  890  grep -w "Music" "Global YouTube Statistics.csv"
+  891  grep -iv "Music" "Global YouTube Statistics.csv" | wc -l
+  892  grep -iv "Music" "Global YouTube Statistics.csv" | wc -w
+  893  grep -w "Music" "Global YouTube Statistics.csv" | wc -l
+  894  grep -w "Music" "Global YouTube Statistics.csv"
+  895  grep -x "Music" "Global YouTube Statistics.csv"
   896  cd /home/thif23
-  897  pwd
-  898  ls
-  899  tree
-  900  cd Worksheet2/
-  901  tree
-  902  history
-  903  cat result_US.txt
-  904  grep -i "Music" "Global YouTube Statistics.csv"
-  905  grep -i "Music" "Global YouTube Statistics.csv" > result_Music.txt
-  906  ls
-  907  cat result_Music.txt
-  908  wc -l result_Music.txt
-  909  wc -l result_Music.txt > counts.txt
-  910  cat counts.txt
-  911  wc -w result_Music.txt
-  912  cat >> counts.txt
-  913  wc -w result_Music.txt >> counts.txt
-  914  cat counts.txt
-  915  cat result_Music.txt
-  916  wc -w result_Music.txt
-  917  wc -w result_Music.txt >> counts.txt
-  918  cat counts.txt
-  919  vi counts.txt
-  920  cat counts.txt
-  921  history
-  922  history > cmds.log
+  897  tree
+  898  cd Worksheet2/
+  899  cat 
+  900  cat "Global YouTube Statistics.csv"
+  901  grep "^[^,]\+,[^,]\+,..."Music"," "Global YouTube Statistics.csv"
+  902  egrep "^[^,]\+,[^,]\+,..."Music"," "Global YouTube Statistics.csv"
+  903  grep "^[^,]\+,[^,]\+,..."Music"," "Global YouTube Statistics.csv" | wc -l
+  904  grep "^[^,]\+,[^,]\+,[^,]\+,[^,]\+,..."Music"," "Global YouTube Statistics.csv" | wc -l
+  905  grep "^[^,]\+,[^,]\+,[^,]\+,[^,]\+,"Music"," "Global YouTube Statistics.csv" | wc -l
+  906  grep "^[^,]\+,[^,]\+,[^,]\+,[^,]\+,"Music"," "Global YouTube Statistics.csv" > result_Music_1.txt
+  907  ls result_Music_1.txt
+  908  cat result_Music_1.txt
+  909  wc -l result_Music_1.txt
+  910  wc -l result_Music_1.txt > counts1.txt
+  911  wc -w result_Music_1.txt >> counts1.txt
+  912  cat counts1.txt
+  913  grep "^[^,]\+,[^,]\+,[^,]\+,[^,]\+,"Music"," "Global YouTube Statistics.csv" > result_Music_1.csv
+  914  cat result_Music_1.csv
+  915  git status
+  916  git add -A
+  917  git status
+  918  history > cmds1.log
+  919  git status
+  920  git add -A
+  921  git status
+  922  git commit -m "new updates to satsify the require "Grep for the lines that are in the "Music" category""
+  923  git commit -m "new updates to satsify the require Grep for the lines that are in the Music category"
+  924  git init
+  925  git push -u origin master
+  926  git status
+  927  git add -A
+  928  git staus
+  929  git status
+  930  git init
+  931  git push -u origin master
+  932  git commit -m "new updates to satsify the require Grep for the lines that are in the Music category"
+  933  git status
+  934  git push -u origin master
+  935  cd /home/thif23
+  936  tree
+  937  git status
+  938  git push -u origin master
+  939  cd Worksheet2/
+  940  tree
+  941  vi counts1.txt
+  942  cat counts1.txt
+  943  tree
+  944  rm cmds.log
+  945  rm counts.txt
+  946  rm result_Music.txt
+  947  tree
+  948  mv cmds1.log cmds.log
+  949  tree
+  950  mv counts1.txt counts.txt
+  951  mv result_Music_1.csv result_Music.csv
+  952  mv result_Music_1.txt result_Music.txt
+  953  tree
+  954  cd /home/thif23
+  955  rm cmds.log
+  956  cd Worksheet2//
+  957  tree
+  958  rm cmds.log
+  959  history > cmds.log
