@@ -1,0 +1,103 @@
+    3  cd cs131/
+    4  ls
+    6  cd /home/thif23
+    7  tree
+    8  mkdir Worksheet3
+   10  cd Worksheet3/
+   11  wget https://raw.githubusercontent.com/khanchandaniashish/CS131/main/Global%20YouTube%20Statistics.csv
+   12  man sort
+   13  sort -k 16nr "Global YouTube Statistics.csv" > earnings.txt
+   14  cat earnings.txt
+   15  sort -k16 -t',' -nr "Global YouTube Statistics.csv" > earnings.txt
+   18  cat earnings.txt
+   19  egrep '^([^,|]*,|){7}[^,]*India' earnings.txt
+   20  egrep '^([^,|]*,|){7}[^,]*India' earnings.txt > earnings.txt
+   21  uniq -D earnings.txt
+   23  cat earnings.txt
+   24  egrep '^([^,|]*,|){7}[^,]*India' earnings.txt
+   25  cat earnings.txt
+   27  egrep '^([^,|]*,|){7}[^,]*India' earnings.txt
+   28  uniq -D earnings.txt
+   29  cat earnings.txt
+   30  egrep '^([^,|]*,|){7}[^,]*India' earnings.txt > india.txt
+   31  cat india.txt
+   32  uniq -D india.txt
+   33  cat india.txt
+   34  sort -k16 -t',' -nr "Global YouTube Statistics.csv" | egrep '^([^,|]*,|){7}[^,]*India' | uniq -D > earnings.txt
+   35  vi earnings.txt
+   36  sort -k16 -t',' -nr "Global YouTube Statistics.csv" | egrep '^([^,|]*,|){7}[^,]*India' > earnings.txt
+   37  cat earnings.txt
+   38  sort -k16 -t',' -nr "Global YouTube Statistics.csv" | egrep '^([^,|]*,|){7}[^,]*India' | cut -d',' -f16 > earnings.txt
+   39  echo earnings.txt
+   40  cat earnings.txt
+   41  sort -k16 -t',' -nr "Global YouTube Statistics.csv" | egrep '^([^,|]*,|){7}[^,]*India' | uniq -c > earnings.txt
+   42  cat earnings.txt
+   43  sort -k16 -t',' -nr "Global YouTube Statistics.csv" | egrep '^([^,|]*,|){7}[^,]*India' | uniq -D -f8 > earnings.txt > earnings.txt
+   44  cat earnings.txt
+   45  echo "earnings.txt"
+   46  cat earnings.txt
+   51  touch ws3.txt
+   52  vi ws3.txt
+   53  cat ws3.txt
+   54  vi earnings.txt
+   55  sort -k16 -t',' -nr "Global YouTube Statistics.csv" | egrep '^([^,|]*,|){7}[^,]*"United States"' | uniq -D -f8 > earnings.txt >> earnings.txt
+   56  cat earnings.txt
+   57  vi earnings.txt
+   58  sort -k16 -t',' -nr "Global YouTube Statistics.csv" | egrep '^([^,|]*,|){7}[^,]*United States' | uniq -D -f8 > earnings.txt > earnings.txt
+   59  cat earnings.txt
+   60  vi ws3.txt
+   61  sort -k16 -t',' -nr "Global YouTube Statistics.csv" | egrep '^([^,|]*,|){7}[^,]*United States' | uniq -D -f8 > earnings.txt | head -n 1
+   62  sort -k16 -t',' -nr "Global YouTube Statistics.csv" | egrep '^([^,|]*,|){7}[^,]*United States' | uniq -D -f8 > earnings.txt | head -n 1 > earnings.txt
+   63  cat earnings.txt
+   64  sort -k16 -t',' -nr "Global YouTube Statistics.csv" | egrep '^([^,|]*,|){7}[^,]*United States' | uniq -D -f8 | head -n 1 > earnings.txt
+   65  cat earnings.txt
+   66  sort -k16 -t',' -nr "Global YouTube Statistics.csv" | egrep '^([^,|]*,|){7}[^,]*United States' | uniq -D -f8 | head -n 1 >> ws3.txt
+   67  vi ws3.txt
+   68  sort -k16 -t',' -nr "Global YouTube Statistics.csv" | egrep '^([^,|]*,|){7}[^,]*United Kingdom' | uniq -D -f8 | head -n 1 >> ws3.txt
+   69  echo 'ws3.txt'
+   70  echo $ws3.txt
+   71  cat ws3.txt
+   72  sort -k16 -t',' -nr "Global YouTube Statistics.csv" | egrep '^([^,|]*,|){7}[^,]*India' | uniq -D -f8 | head -n 1 >> ws3.txt
+   73  vi ws3.txt
+   74  cat ws3.txt
+   75  sort -k3 -t',' -nr "Global YouTube Statistics.csv" | egrep '^([^,|]*,|){4}[^,]*Sports' | uniq -D -f8 | head -n 1 >> ws3.txt
+   76  cat ws3.txt
+   77  vi ws3.txt
+   78  sort -k3 -t',' -nr "Global YouTube Statistics.csv" | egrep '^([^,|]*,|){4}[^,]*Education' | uniq -D -f8 | head -n 1 >> ws3.txt
+   79  vi ws3.txt
+   80  sort -k3 -t',' -nr "Global YouTube Statistics.csv" | egrep '^([^,|]*,|){4}[^,]*Entertainment' | uniq -D -f8 | head -n 1 >> ws3.txt
+   81  cat ws3.txt
+   82  sort -k3 -t',' -nr "Global YouTube Statistics.csv" | egrep '^([^,|]*,|){4}[^,]*Education' | uniq -D -f8 | head -n 1 >> ws3.txt
+   83  cat ws3.txt
+   84  vi ws3.txt
+   85  cat ws3.txt
+   87  rm earnings.txt
+   88  rm india.txt
+   90  sort -k3 -t',' -nr "Global YouTube Statistics.csv" | egrep '^([^,|]*,|){4}[^,]*Education' | uniq -D -f8 >> testing.txt
+   91  cat testing.txt
+   92  sort -k3 -t',' -nr "Global YouTube Statistics.csv" | egrep '^([^,|]*,|){4}[^,]*Education' | uniq -d -f8 >> testing.txt
+   93  cat testing.txt 
+   94  sort -k3 -t',' -nr "Global YouTube Statistics.csv" | egrep '^([^,|]*,|){4}[^,]*Education' | uniq -c -f8 >> testing.txt
+   95  cat testing.txt 
+   96  sort -k3 -t',' -nr "Global YouTube Statistics.csv" | egrep '^([^,|]*,|){4}[^,]*Education' | uniq -D -f8 > testing.txt
+   97  cat testing.txt 
+   98  sort -k3 -t',' -n "Global YouTube Statistics.csv" | egrep '^([^,|]*,|){4}[^,]*Education' | uniq -D -f8 > testing.txt
+   99  cat testing.txt 
+  100  sort -k3 -t',' -nr "Global YouTube Statistics.csv" | egrep '^([^,|]*,|){4}[^,]*Education' | uniq -D -f5 | head -n 1 > testing.txt
+  101  cat testing.txt 
+  102  sort -k3 -t',' -nr "Global YouTube Statistics.csv" | egrep '^([^,|]*,|){4}[^,]*Education' | uniq -D | head -n 1 > testing.txt
+  103  cat testing.txt 
+  104  sort -k3 -t',' -n "Global YouTube Statistics.csv" | egrep '^([^,|]*,|){4}[^,]*Education' | uniq -D -f5 | head -n 1 > testing.txt
+  105  car testing.txt 
+  106  cat testing.txt 
+  107  sort -k3 -t',' -nr "Global YouTube Statistics.csv" | egrep '^([^,|]*,|){4}[^,]*Education' | uniq -D -f5 | head -n 1 > testing.txt
+  108  cat testing.txt 
+  109  sort -k3 -t',' -r "Global YouTube Statistics.csv" | egrep '^([^,|]*,|){4}[^,]*Education' | uniq -D -f5 | head -n 1 > testing.txt
+  110  cat testing.txt 
+  111  sort -k3 -t',' -n "Global YouTube Statistics.csv" | egrep '^([^,|]*,|){4}[^,]*Education' | uniq -D -f8 | head -n 1 > testing.txt
+  112  cat testing.txt 
+  113  sort -k3 -t',' -r "Global YouTube Statistics.csv" | egrep '^([^,|]*,|){4}[^,]*Education' | uniq -D -f8 | head -n 1 > testing.txt
+  114  cat testing.txt 
+  115  sort -k3 -t',' -n "Global YouTube Statistics.csv" | egrep '^([^,|]*,|){4}[^,]*Education' | uniq -D -f8 | head -n 1 >> ws3.txt
+  116  vi ws3.txt 
+  117  history > cmds.log
