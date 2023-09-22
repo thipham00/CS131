@@ -1,0 +1,114 @@
+
+1. # The command I used to created directory Assignment1 is: mkdir Assignment1
+
+============================================================
+
+2.# I used echo $SHELL command to echo my current Shell.
+   The output is /bin/bash
+
+]0;thif23@sjsu:/home/thif23/Assignment1[thif23@sjsu Assignment1]$ echo $SHELL
+/bin/bash
+
+   ------------------
+  # I used the echo $HOME command to echo my home directory path.
+   The output is: /mnt/scratch/FA23_CS131_Ashish/thif23
+
+]0;thif23@sjsu:/home/thif23/Assignment1[thif23@sjsu Assignment1]$ echo $HOME
+/mnt/scratch/FA23_CS131_Ashish/thif23
+
+============================================================
+
+3.# I used the id command to find my UID and GID.
+    My UID is: 1129
+    My GID is: 1129
+
+]0;thif23@sjsu:/home/thif23/Assignment1[thif23@sjsu Assignment1]$ id
+uid=1129(thif23) gid=1129(thif23) groups=1129(thif23),77(S77)
+
+============================================================
+
+4.# myDir before removing write permission for myself:
+-rw-rw-r-- 1 thif23 thif23 2511 Sep 21 01:53 cmds1.log
+drwxrwxr-x 2 thif23 thif23    6 Sep 21 02:11 [0m[38;5;33mmyDir[0m
+
+  # myDir after removing write permission for myself:
+-rw-rw-r-- 1 thif23 thif23 2511 Sep 21 01:53 cmds1.log
+dr-xrwxr-x 2 thif23 thif23    6 Sep 21 02:11 [0m[38;5;33mmyDir[0m 
+
+ # For the myDir directory, after remove write permission for myself, 
+ I still be able to cd in this directory,ls and ls -l still working fine. 
+ However, I can not create files under it, neither nor creating directory.
+ If I tried to do that, the screen will appear error.
+
+ # Command line to test if cd, ls, ls -l works:
+ ]0;thif23@sjsu:/home/thif23/Assignment1[thif23@sjsu Assignment1]$ cd myDir/
+
+]0;thif23@sjsu:/home/thif23/Assignment1/myDir[thif23@sjsu myDir]$ ls
+]0;thif23@sjsu:/home/thif23/Assignment1/myDir[thif23@sjsu myDir]$ ls -l
+total 0
+-------------------------
+]0;thif23@sjsu:/home/thif23/Assignment1/myDir[thif23@sjsu myDir]$ touch testing.txt
+touch: cannot touch 'testing.txt': Permission denied
+-------------------------
+]0;thif23@sjsu:/home/thif23/Assignment1/myDir[thif23@sjsu myDir]$ mkfi[K[Kdir testing
+mkdir: cannot create directory ‘testing’: Permission denied 
+
+============================================================
+
+5.# Creating new directory myDir2 and myDir3
+
+]0;thif23@sjsu:/home/thif23/Assignment1[thif23@sjsu Assignment1]$ mkdir myDir2
+]0;thif23@sjsu:/home/thif23/Assignment1[thif23@sjsu Assignment1]$ mkdir myDir3
+
+============================================================
+
+6.# Creating file "myFile.txt" in myDir2 using touch command.
+ 
+]0;thif23@sjsu:/home/thif23/Assignment1[thif23@sjsu Assignment1]$ cd myDir2/
+]0;thif23@sjsu:/home/thif23/Assignment1/myDir2[thif23@sjsu myDir2]$ touch myFile.xt[K[Ktxt
+
+  # Command that I used to move myFile.txt from myDir2 to myDir3 is: 
+   mv /home/thif23/Assignment1/myDir2/myFile.txt /home/thif23/Assignment1/myDir3 
+---------------------------
+  # Using free -m command to display memory in the IBM  VM in megabytes.
+  Output:
+
+]0;thif23@sjsu:/home/thif23/Assignment1[thif23@sjsu Assignment1]$ free -m
+              total        used        free      shared  buff/cache   available
+Mem:          71367       11166        3576        1034       56624       56725
+Swap:          4119        1007        3112
+
+============================================================
+
+9.#  Using cat /etc/os-release command to identify the operating system version.
+   The system is running the Red Hat Enterprise Linux v8.6
+   The file "os-release" under /etc/ contain that information.
+
+]0;thif23@sjsu:/home/thif23[thif23@sjsu thif23]$ cat /etc/os-release
+NAME="Red Hat Enterprise Linux"
+VERSION="8.6 (Ootpa)"
+ID="rhel"
+ID_LIKE="fedora"
+VERSION_ID="8.6"
+PLATFORM_ID="platform:el8"
+PRETTY_NAME="Red Hat Enterprise Linux 8.6 (Ootpa)"
+ANSI_COLOR="0;31"
+CPE_NAME="cpe:/o:redhat:enterprise_linux:8::baseos"
+HOME_URL="https://www.redhat.com/"
+DOCUMENTATION_URL="https://access.redhat.com/documentation/red_hat_enterprise_linux/8/"
+BUG_REPORT_URL="https://bugzilla.redhat.com/"
+
+REDHAT_BUGZILLA_PRODUCT="Red Hat Enterprise Linux 8"
+REDHAT_BUGZILLA_PRODUCT_VERSION=8.6
+REDHAT_SUPPORT_PRODUCT="Red Hat Enterprise Linux"
+REDHAT_SUPPORT_PRODUCT_VERSION="8.6"
+
+============================================================
+
+10.# In the file os-release that contains the OS version information,
+the permissions to read, write, and execute "rwx" are given to the owner, groups, and others. 
+
+]0;thif23@sjsu:/etc[thif23@sjsu etc]$ ls -l os-release
+lrwxrwxrwx. 1 root root 22 Apr  6  2022 [0m[38;5;51mos-release[0m -> ..//usr/lib/os-release
+
+ 
