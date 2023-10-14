@@ -1,0 +1,75 @@
+1,
+find /etc -type f > one.txt 2> two.txt
+a, This command uses to search for files in the /etc directory and save standard output in file named one.txt and redrirect/save the standard errors to file named two.txt.
+b, When I use cat command to view file one.txt, I see a list of regular files found in /etc directory, and in file two.txt, I found all the error messages that occurred during the search like permission problems or inaccessible directories. I think if the search went successful, filw two.txt will be empty. 
+
+---------------
+2, 
+As per the Dataset, top 3[Year, Month] with the most number of YouTube channels created were:
+1. 2006,Mar with 15 channels
+2. 2014,Jul with 13 channels
+3. 2014,Aug with 12 channels
+
+---------------
+3,
+The command I used to find this was: cut -d "," -f 20-21 "Global YouTube Statistics.csv" | sort | uniq -c | sort -k1,1nr > MostCreatedChannels.txt
+
+Explain: I use command "cut -d "," -f 20-21" to extract fields or columns 20 and 21 which contains data of created_year and created_month, these two comlums separated by comma ",". Then I use "sort" command to sort them, count the unique occurences by command "uniq -c", then sort the counted result in descending order based on the count result by "sort -k1, 1nr" command, and finally redirect/save results to file MostCreatedChannels.txt. All of the commands are combined in one line by using pipes.
+
+---------------
+4,
+Command to find all the prcesses owned by me: ps -u thif23
+Output:
+    PID TTY          TIME CMD
+3700583 ?        00:00:03 systemd
+3700585 ?        00:00:00 (sd-pam)
+3700593 ?        00:00:00 sshd
+3700599 pts/120  00:00:00 bash
+3751944 pts/120  00:00:00 script
+3751946 pts/107  00:00:00 bash
+3767154 pts/107  00:00:00 ps
+
+a,
+b, 
+Output:
+    PID TTY          TIME CMD
+3700583 ?        00:00:03 systemd
+3700585 ?        00:00:00 (sd-pam)
+3700593 ?        00:00:00 sshd
+3700599 pts/120  00:00:00 bash
+3749024 ?        00:00:00 sshd
+3749027 pts/77   00:00:00 bash
+3751944 pts/120  00:00:00 script
+3751946 pts/107  00:00:00 bash
+3764060 pts/77   00:00:00 vim
+3764114 pts/107  00:00:00 ps
+
+I notice that there're 2 exra lines appear: "3749024 ?        00:00:00 sshd" and "3764060 pts/77   00:00:00 vim". Also, 
+The process ID for the vim is: 3764060
+c,
+d,
+Output:
+    PID TTY          TIME CMD
+3700583 ?        00:00:03 systemd
+3700585 ?        00:00:00 (sd-pam)
+3700593 ?        00:00:00 sshd
+3700599 pts/120  00:00:00 bash
+3749024 ?        00:00:00 sshd
+3749027 pts/77   00:00:00 bash
+3751944 pts/120  00:00:00 script
+3751946 pts/107  00:00:00 bash
+3766015 pts/107  00:00:00 ps
+
+I notice that the process id of vi no longer appear on my list of processes. I think this happens because I have exited the vi editor in the other terminal, that's why the process id associated with the vi process will also disappear
+ 
+---------------
+5,
+Init process in Linux: or systemd referred to the first process started by the kernel during the system's boot processes. It serves as the parent of all other processes adn is responsible for the initializing the system and managing system services.
+
+To find the process id of init process or systemd, I use command "ps aux | grep systemd". Result: 1
+Output: 
+root           1  0.3  0.0 178624 18368 ?        Ss   Oct05  43:45 /usr/lib/systemd/systemd --switched-root --system --deserialize 17
+---------------
+6,
+ps aux: use to display a detailed list of running processes, including username, process id, CPU, memory usage, etc. 
+---------------
