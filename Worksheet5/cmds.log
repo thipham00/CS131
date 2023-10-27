@@ -1,0 +1,33 @@
+Script started on 2023-10-26 18:49:48-04:00
+bash-4.4$ IFS=$'\n'
+bash-4.4$ md[Kkdir -p "United States"
+bash-4.4$ music=0
+bash-4.4$ entertainment=0
+bash-4.4$ gaming=0
+bash-4.4$ mo[Kc[K[Kcomedy=0
+bash-4.4$ while FI[K[KIFS=',' read -r -a fil[Kelds; do
+> if [[ "${fields[7]}" == "United States" ]]; then
+> if [[ "${fields[4]}" == "Music" ]]; then
+> echo "${fields[*]}" >> "United States/Music.txt"
+> ((music++))
+> elif [[ "${fields[4]}" == "Entertainment" ]]; then
+> echo "${fields[*]}" >> "United States/Entertainment.txt"
+> ((entertainment++))
+> elif [[ "${fields[4]}" == "Gaming" ]]; then
+> echo "${fields[*]}" >> "United States/Gaming.txt"
+> ((gaming++))
+> elif [[ "${fields[4]}" == "Comedy" ]]; then
+> echo "${fields[*]}" >> "United States/Comedy.txt"
+> ((comedy++))
+> fi
+> fi
+> done[K[K[K[Kdone < "Global YouTube Statistics.csv"
+bash-4.4$ whoc=[K[K[K[K[Kecho "Music"[K: $music" > "United States"/[K[K/ws5.txt[C[1Pws5.txt[1Pws5.txt[1Pws5.txt[1Pws5.txt[1Pws5.txt[1Pws5.txt[1Pws5.txt[1Pws5.txt[1Pws5.txt[1Pws5.txt[1Pws5.txt[1Pws5.txt[1Pws5.txt[1Pws5.txt[C[C[C[C[C[C[C"
+bash-4.4$ echo "Entertainmemt[K[Knr[Kt :[K[K[Kt: $entertin[K[Kainme[Kent" >> "ws5.txt"
+bash-4.4$ echo "Gaming: $gaming" >> "W[K"w"s"5"."t"x"t"[C
+bash-4.4$ wcho[K[K[K[Kecho " [KComedy: $comedy" >> "ws5.txt"
+bash-4.4$ IFS=$' \t\n'
+bash-4.4$ exit
+exit
+
+Script done on 2023-10-26 18:56:12-04:00
