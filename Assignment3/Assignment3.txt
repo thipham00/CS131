@@ -1,0 +1,105 @@
+Task 1:
+
+Commands I used to solve: 
+1. wc -l lask.fake >> Assignment3.txt
+2. awk '/f23/ {print} last.fake >> lastf23.fake
+3. 
+awk '/!f23/ {print}' lastf23.fake | wc -l
+wc -l lastf23.fake >> Assignment3.txt
+
+Output of commands:
+1. 2162 last.fake
+2. No output
+3. 239 lastf23.fake
+
+------------------
+Task 2:
+
+Commands I used to solve: 
+egrep "Sun" lastf23.fake | awk '{print $1}' | sort | uniq -d | awk 'BEGIN {print "The list of people who worked on Sunday are: "} {print $1} END {print "Kudos to these people for putting in the work"}'
+
+Output of commands:
+Users who logged in on Sunday: 
+jewonf23
+saniaf23
+tienf23
+Kudos to these people for putting in the work
+
+-------------------
+Task 3: 
+
+Commands I used to solve:
+awk '($7 >= "23:00" || $7 <= "04:00") {print $1}' lastf23.fake | sort | uniq -d | awk 'BEGIN {print "Night Owls List: "} {print $1} END {print "Night Owls are dope. Please ensure you get enough sleep though."}'
+
+Output of commands:
+Night Owls List: 
+aaronf23
+anasf23
+divijf23
+hamzaf23
+jamesf23
+junf23
+kobef23
+maximf23
+rahulf23
+rikkif23
+saniaf23
+thif23
+tienf23
+Night Owls are dope. Please ensure you get enough sleep though.
+
+-------------------------------
+Task 4: 
+
+Commands I used to solve:
+awk '$7 >= "05:00" && $7 <= "09:00" && !names[$1]++ {list = list $1 ORS} END {if (list) print "Early Birds List: \n" list "Early Birds are dope. Please ensure you get enough sleep though."}' lastf23.fake >> Assignment3.txt
+
+Output of commands:
+Early Birds List: 
+hamzaf23
+hof23
+thif23
+saniaf23
+tienf23
+Early Birds are dope. Please ensure you get enough sleep though.
+
+------------------------------------
+Task 5: 
+
+Commands I used to solve:
+awk '/^t/ {print $1}' lastf23.fake | sort | uniq >> Assignment3.txt
+
+Output of commands:
+thif23
+tienf23
+
+------------------------------------
+Task 6:
+
+Commands I used to solve:
+awk -F: '/^a/ && $3 % 2 == 0 {print $1}' passwd.fake | sort | uniq >> Assignment3.txt
+
+Output of commands:
+ajay23fa
+alan23fa
+amreenf23
+angie23fa
+apple23fa
+areebah23fa
+
+------------------------------------
+Task 7:
+
+Commands I used to solve:
+sed -r 's/[a-zA-Z0-9 ]//g' passwd.fake | sort -u >> Assignment3.txt
+
+Output of commands:
+-::::-:/://
+-:::::///-://
+-:::::/://
+::::-:///://
+:::::///://
+:::::///_/://
+:::::///__/://
+::::://://
+:::::/://
