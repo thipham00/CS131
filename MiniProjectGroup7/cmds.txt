@@ -1,0 +1,52 @@
+Commands used:
+
+#get salary
+grep -o -E '\$[0-9]+K-\$[0-9]+K' DataScientist.csv > testing.csv
+
+#sort min-max salary range by each location:
+awk -F ',' '{gsub(/[$K]/,"",$2); print $2 "," $1}' SalaryByLocation.csv | sort -t ',' -k2,2 -k1,1nr > SortedSalaryByLocation.csv
+
+#sort min-max salary of each location:
+awk -F ',' 'NR > 1 {gsub(/[$K]/,"",$1); split($1, range, "-"); salary = range[1]; location = $2; if (!min[location] || salary < min[location]) min[location] = salary; if (!max[location] || salary > max[location]) max[location] = salary} END {for (loc in min) print loc "," "$" min[loc] "K-$" max[loc] "K"}' SortedSalaryByLocation.csv > MinMaxSalaryByLocation.csv
+
+Salary by Company Size
+1. Command to extract salary estimates by company size
+awk -F ',' -f salary_by_size.awk DataScientist.csv
+**see salary_by_size.awk file to view full awk command**
+
+2. Command to create a csv file with the company size, min salary estimate, and max salary estimate (split the salary range)
+awk 'BEGIN {FS=OFS=","} {gsub("[$K]", "", $2); sub("-", ",", $2)}1' SalaryBySize.csv > SalaryBySizeSplit.csv
+
+3. Command to verify the number of lines in the salary by size files
+grep -w "10000+" SalaryBySizeSplit.csv | wc -l
+ * compare result to*
+grep -w "10000+" DataScientist.csv | wc -l
+ * repeat for the other company size values (1 to 50, 51 to 200, etc.)*
+
+
+Salary by Experience Level
+4. Command to extract salary estimates by experience level
+awk -F ',' '{for (i = 1; i <= NF; i++) if ((tolower($i) ~ /junior|jr|senior|sr|manager|director|vice president|vp/) && match($(i+1), /\$[0-9]+K-\$[0-9]+K/)) print $i "," $(i+1) >> "SalaryByExperience.csv"}' DataScientist.csv
+
+5. Command used to remove "(Glassdoor est.)" and "(Employer est.) from each line
+sed -i 's/(Glassdoor est\.)//g; s/(Employer est\.)//g' SalaryByExperience.csv 
+
+6. Command to create a csv file with experience level, min salary estimate, and max salary estimate (split the salary range)
+awk 'BEGIN {FS=OFS=","} {gsub("[$K]", "", $2); sub("-", ",", $2)}1' SalaryByExperience.csv > SalaryByExperienceSplit.csv
+
+
+Industry Type by Company Rating
+7. Command to extract industry type by company rating
+awk -F "," -f industry_by_rating.awk DataScientist.csv
+* see industry_by_rating.awk for full command *
+
+8. Command to change "Oil, Gas, Energy & Utilities" to "Oil - Gas - Energy & Utilities" (to be easier to work with in a CSV file)
+sed -i 's/Oil, Gas, Energy \& Utilities/Oil - Gas - Energy \& Utilities/g' IndustryByRating.csv 
+
+
+
+
+
+
+
+
