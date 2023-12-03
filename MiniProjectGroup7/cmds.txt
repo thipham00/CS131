@@ -3,11 +3,20 @@ Commands used:
 #get salary
 grep -o -E '\$[0-9]+K-\$[0-9]+K' DataScientist.csv > testing.csv
 
+
+#split min-max in salary:
+awk 'BEGIN {FS=OFS=","; print "Min Estimate Salary,Max Estimate Salary"} {gsub("[$K]", "", $1); sub("-", ",", $1)}1' Salary.csv > SalarySplit.csv
+
+
 #sort min-max salary range by each location:
 awk -F ',' '{gsub(/[$K]/,"",$2); print $2 "," $1}' SalaryByLocation.csv | sort -t ',' -k2,2 -k1,1nr > SortedSalaryByLocation.csv
 
+
 #sort min-max salary of each location:
 awk -F ',' 'NR > 1 {gsub(/[$K]/,"",$1); split($1, range, "-"); salary = range[1]; location = $2; if (!min[location] || salary < min[location]) min[location] = salary; if (!max[location] || salary > max[location]) max[location] = salary} END {for (loc in min) print loc "," "$" min[loc] "K-$" max[loc] "K"}' SortedSalaryByLocation.csv > MinMaxSalaryByLocation.csv
+
+
+
 
 Salary by Company Size
 1. Command to extract salary estimates by company size
