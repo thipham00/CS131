@@ -1,4 +1,3 @@
-Commands used:
 
 #get salary
 grep -o -E '\$[0-9]+K-\$[0-9]+K' DataScientist.csv > testing.csv
@@ -8,18 +7,27 @@ grep -o -E '\$[0-9]+K-\$[0-9]+K' DataScientist.csv > testing.csv
 awk 'BEGIN {FS=OFS=","; print "Min Estimate Salary,Max Estimate Salary"} {gsub("[$K]", "", $1); sub("-", ",", $1)}1' Salary.csv > SalarySplit.csv
 
 
-#sort min-max range of salary by each location:
+### SALARY BY LOCATION ###
+
+1. Command to extract salary estimates by location
+awk -F ‘,’ -f SalaryByLocation.awk DataScientist.csv
+** see SalaryByLocationn.awk to view full awk command **
+ 
+2.Sort min-max range of salary by each location:
 awk -f MinMaxSalaryByLocation.awk SalaryByLocation.csv | sort > MinMaxSalaryByLocation.csv
+** see MinMaxSalaryByLocation.awk to view full awk command **
 
 
+### SALARY BY COMPANY SIZE ###
 
-Salary by Company Size
 1. Command to extract salary estimates by company size
 awk -F ',' -f salary_by_size.awk DataScientist.csv
 **see salary_by_size.awk file to view full awk command**
+--> set field separator FS to "," | -f used to specify name of external input file
 
 2. Command to create a csv file with the company size, min salary estimate, and max salary estimate (split the salary range)
 awk 'BEGIN {FS=OFS=","} {gsub("[$K]", "", $2); sub("-", ",", $2)}1' SalaryBySize.csv > SalaryBySizeSplit.csv
+-->set FS and OFS to ",", uses gsub to remove globally $ and K in 2nd field (salary) | use sub to split min and max salary into differnent fields by change - to , | 1 is a true condition, print entire line after modification. 
 
 3. Command to verify the number of lines in the salary by size files
 grep -w "10000+" SalaryBySizeSplit.csv | wc -l
@@ -27,26 +35,43 @@ grep -w "10000+" SalaryBySizeSplit.csv | wc -l
 grep -w "10000+" DataScientist.csv | wc -l
  * repeat for the other company size values (1 to 50, 51 to 200, etc.)*
 
+4. Command to add the headers to the csv file
+vi SalaryBySizeSplit.csv
+>> In vi, add the headers: Company Size,Min. Salary Estimate (in thousands of $),Max. Salary Estimate (in thousands of $)
 
-Salary by Experience Level
-4. Command to extract salary estimates by experience level
+
+### SALARY BY EXPERIENCE LEVEL ###
+
+1. Command to extract salary estimates by experience level
 awk -F ',' '{for (i = 1; i <= NF; i++) if ((tolower($i) ~ /junior|jr|senior|sr|manager|director|vice president|vp/) && match($(i+1), /\$[0-9]+K-\$[0-9]+K/)) print $i "," $(i+1) >> "SalaryByExperience.csv"}' DataScientist.csv
+--> for loop iterates thru each field $i and check if lowercase version of current field matches any of specific job tile (junior, etc.) and  ($(i+1)) matches the specified salary range pattern (e.g., "$XXXK-$XXXK"). | if condition is true, print entire line with fields separates by ,
 
-5. Command used to remove "(Glassdoor est.)" and "(Employer est.) from each line
+2. Command used to remove "(Glassdoor est.)" and "(Employer est.) from each line
 sed -i 's/(Glassdoor est\.)//g; s/(Employer est\.)//g' SalaryByExperience.csv 
+--> -i: in-place edits | s: remove and subtitutes  globally "Glassdoor est." and "Employer est."with an empty string corresponding
 
-6. Command to create a csv file with experience level, min salary estimate, and max salary estimate (split the salary range)
+3. Command to create a csv file with experience level, min salary estimate, and max salary estimate (split the salary range)
 awk 'BEGIN {FS=OFS=","} {gsub("[$K]", "", $2); sub("-", ",", $2)}1' SalaryByExperience.csv > SalaryByExperienceSplit.csv
 
+4. Command to add the header to the csv file
+vi SalaryByExperienceSplit.csv
+>> In vi, add the headers: Experience Level,Min. Salary Estimate (in thousands of $),Max. Salary Estimate (in thousands of $)
 
-Industry Type by Company Rating
-7. Command to extract industry type by company rating
+
+### INDUSTRY TYPE BY COMPANY RATING ###
+
+1. Command to extract industry type by company rating
 awk -F "," -f industry_by_rating.awk DataScientist.csv
 * see industry_by_rating.awk for full command *
 
-8. Command to change "Oil, Gas, Energy & Utilities" to "Oil - Gas - Energy & Utilities" (to be easier to work with in a CSV file)
+2. Command to change "Oil, Gas, Energy & Utilities" to "Oil - Gas - Energy & Utilities" (to be easier to work with in a CSV file)
 sed -i 's/Oil, Gas, Energy \& Utilities/Oil - Gas - Energy \& Utilities/g' IndustryByRating.csv 
+3. Command to verify the number of records in the csv file
+wc -l IndustryByRating.csv
 
+4. Command to add the header to the csv file
+vi IndustryByRating.csv
+>> In vi, add the headers: Industry Type,Company Rating 
 
 
 

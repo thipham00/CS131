@@ -1,7 +1,7 @@
 {
     # Check for the "$XXXK-$XXXK" pattern in each line
-    if (match($0, /\$[0-9]+K-\$[0-9]+K/)) {
-        salary_estimate = substr($0, RSTART, RLENGTH)  # Store matched pattern
+    if (match($0, /\$[0-9]+K-\$[0-9]+K/)) { #check if entire line ($0) contain pattern
+        salary_estimate = substr($0, RSTART, RLENGTH)  # capture portions of lines that matches pattern then assign them to salary_estimate: extracts substring from $0 starting at poition specified by RSTART and with a length of RLENGTH
     }
 
     # If "1 to 50 employees" is found, handle the stored pattern

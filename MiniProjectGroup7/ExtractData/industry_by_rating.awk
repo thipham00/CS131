@@ -1,15 +1,16 @@
 {
     # Check for the "X.X" pattern in each line
+    #for loop intertes each field $i in current line, NF variable representing number of fields in current line
     for (i = 1; i <= NF; i++) {
-        if (match($i, /^[0-9]\.[0-9]$/)) {
+        if (match($i, /^[0-9]\.[0-9]$/)) { #check if fields match pattern X.X at the start of field (^[0-9]) and the end of field ([0-9]$) 
             rating = $i
         }
     }
 
-    if ($0 ~ /Telecommunications/) {
-        if (rating) {
+    if ($0 ~ /Telecommunications/) { #check if entire line contains string
+        if (rating) { #check if rating is not empty, ensure valid pattern X.X was found in line
             print "Telecommunications," rating > "IndustryByRating.csv"
-            rating= ""
+            rating= "" #reset rating var to empty string after printing, so it won't reuse the previous string
         }
     }
     else if ($0 ~ /\"Oil, Gas, Energy & Utilities\"/) {
