@@ -1,4 +1,3 @@
-# calculate_salary_range.awk
 
 BEGIN {
     FS = ",";
